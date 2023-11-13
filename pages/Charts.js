@@ -8,7 +8,7 @@ import {
     StackedBarChart
 } from "react-native-chart-kit";
 
-import { data, contributionData, pieChartData, progressChartData } from './data'
+import { data, contributionData, pieChartData, progressChartData } from './chartDataMocked'
 
 function BezierLineChart() {
     return (
