@@ -8,14 +8,15 @@ import App from './App';
 import Charts from './pages/Charts';
 import GetApiCall from './pages/networking/GetApiCall';
 import PostApiCall from './pages/networking/PostApiCall';
-
+import WeatherApp from './pages/weather/WeatherApp';
 import SampleLoginScreen from './screens/SampleLoginScreen';
 
 import {name as appName} from './app.json';
 
-//AppRegistry.registerComponent(appName, () => App);
+AppRegistry.registerComponent(appName, () => App);
 AppRegistry.registerComponent(appName, () => Charts);
 AppRegistry.registerComponent(appName, () => GetApiCall);
-//AppRegistry.registerComponent(appName, () => PostApiCall);
+AppRegistry.registerComponent(appName, () => PostApiCall);
+AppRegistry.registerComponent(appName, () => WeatherApp);
 
 //AppRegistry.registerComponent(appName, () => SampleLoginScreen);
