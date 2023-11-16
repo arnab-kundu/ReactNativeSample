@@ -1,0 +1,5 @@
+npm install react-native-sqlite-storage
+
+cd ios
+
+pod install

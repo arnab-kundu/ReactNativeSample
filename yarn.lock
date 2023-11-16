@@ -6564,6 +6564,11 @@ react-native-scrollable-tab-view@^1.0.0:
     prop-types "^15.6.0"
     react-timer-mixin "^0.13.3"
 
+react-native-sqlite-storage@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.npmjs.org/react-native-sqlite-storage/-/react-native-sqlite-storage-6.0.1.tgz"
+  integrity sha512-1tDFjrint6X6qSYKf3gDyz+XB+X79jfiL6xTugKHPRtF0WvqMtVgdLuNqZunIXjNEvNtNVEbXaeZ6MsguFu00A==
+
 react-native-svg@^13.14.0, "react-native-svg@> 6.4.1":
   version "13.14.0"
   resolved "https://registry.npmjs.org/react-native-svg/-/react-native-svg-13.14.0.tgz"
@@ -6580,7 +6585,7 @@ react-native-vector-icons@^10.0.2:
     prop-types "^15.7.2"
     yargs "^16.1.1"
 
-react-native@*, "react-native@>= 0.50.0", react-native@>=0.20.0, react-native@>=0.57, react-native@0.72.6:
+react-native@*, "react-native@>= 0.50.0", react-native@>=0.14.0, react-native@>=0.20.0, react-native@>=0.57, react-native@0.72.6:
   version "0.72.6"
   resolved "https://registry.npmjs.org/react-native/-/react-native-0.72.6.tgz"
   integrity sha512-RafPY2gM7mcrFySS8TL8x+TIO3q7oAlHpzEmC7Im6pmXni6n1AuufGaVh0Narbr1daxstw7yW7T9BKW5dpVc2A==
