@@ -12,6 +12,8 @@ const Home = () => {
         onPress={() => navigation.navigate("Second")}
         title="Go to second screen!"
       />
+      <Button onPress={() => navigation.navigate("Login")} title="Login" />
+      <Button onPress={() => navigation.navigate("Chart")} title="Chart" />
     </SafeAreaView>
   );
 };
