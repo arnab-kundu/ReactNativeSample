@@ -1,18 +1,15 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import MaterialCommunityIcons from 'react-native-vector-icons'
+import { View, Text, StyleSheet, Image } from 'react-native';
 
 import PropTypes from 'prop-types';
 import { weatherConditions } from '../utils/WeatherConditions';
 
-const Weather = ({ weather, temperature }) => {
-  console.log(weather)
-  weather = "Clouds"
+const Weather = ({ weather, temperature, icon }) => {
   if (weather != null) {
     return (
       <View style={[styles.weatherContainer, { backgroundColor: weatherConditions[weather].color }]}>
         <View style={styles.headerContainer}>
-          <MaterialCommunityIcons size={72} name={weatherConditions[weather].icon} color={'#fff'} />
+          <Image style={styles.tinyLogo} source={{ uri: 'https://openweathermap.org/img/w/'+icon+'.png' }} />
           <Text style={styles.tempText}>{temperature}˚</Text>
         </View>
         <View style={styles.bodyContainer}>
@@ -63,7 +60,12 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 24,
     color: '#fff'
-  }
+  },
+  tinyLogo: {
+    padding: 90,
+    width: 72,
+    height: 72,
+  },
 });
 
 export default Weather;

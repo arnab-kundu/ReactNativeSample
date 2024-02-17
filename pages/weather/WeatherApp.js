@@ -8,6 +8,7 @@ import Weather from './components/Weather';
 export default function WeatherApp() {
   const [temperature, setTemperature] = useState(0)
   const [weather, setWeather] = useState('')
+  const [icon, setIcon] = useState('')
   const [isLoading, setLoading] = useState(true)
 
   function componentDidMount() {
@@ -26,25 +27,19 @@ export default function WeatherApp() {
   }
 
   const fetchWeather = async (lat, lon) => {
-    console.log(lat);
-    console.log(lon);
+    console.log(`lat: ${lat}, lon: ${lon}`);
     try {
-      fetch(
-        `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${API_KEY}&units=metric`
-      )
-        .then(res => {
-          console.warn("Status: " + res.status)
-          console.warn("Body: " + res.body)
-          res.json()
-        })
-        .then(json => {
-          setTemperature(json.main.temp)
-          setWeather(json.weather[0].main)
-          
-          console.warn(json);
-          console.log("Response: " + json.main.temp);
-          console.log("Response: " + json.weather[0].main);
-        })
+      const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&APPID=${API_KEY}&units=metric`)
+      const responseJson = await response.json()
+      const formattedJson = JSON.stringify(responseJson, null)
+      console.log("Response: " + formattedJson)
+      console.log("Response: Temperature: " + responseJson.main.temp)
+      console.log("Response: Sky: " + responseJson.weather[0].main)
+      console.log("Response: Icon: " + responseJson.weather[0].icon)
+      setTemperature(responseJson.main.temp)
+      setWeather(responseJson.weather[0].main)
+      setIcon(responseJson.weather[0].icon)
+
     } catch (error) {
       console.error(error);
     } finally {
@@ -53,7 +48,7 @@ export default function WeatherApp() {
   }
 
   useEffect(() => {
-    fetchWeather(12.2, 12.34);
+    fetchWeather(22.6440364,88, 3040141,11);
   }, {});
 
   return (
@@ -63,7 +58,7 @@ export default function WeatherApp() {
           <Text style={styles.loadingText}>Fetching The Weather</Text>
         </View>
       ) : (
-        <Weather weather={weather} temperature={temperature} />
+        <Weather weather={weather} temperature={temperature} icon={icon} />
       )}
     </View>
   );
