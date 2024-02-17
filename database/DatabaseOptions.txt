@@ -1,0 +1,46 @@
+https://medium.com/@dubaidevmarketing/top-10-local-databases-for-react-native-app-development-in-2023-5944bb58042e
+
+Top 10 Local Databases for React Native App Development in 2023
+In 2023, several local databases are available for React Native app development that provide developers with the flexibility and convenience of storing data locally on the user’s device.
+
+These databases offer various features and capabilities to meet the specific needs of React Native developers. Here, we will explore the top 10 local databases for React Native app development in 2023.
+
+SQLite:
+
+SQLite is a widely used and popular local database for mobile app development. It is a self-contained, serverless, and zero-configuration database engine that stores data in a single file. React Native provides a plugin enabling developers to interact with SQLite databases seamlessly.
+
+Realm:
+
+Realm is a strong local database that supports offline use and real-time synchronization. Developers can work with data more easily because it offers an object-oriented data model. Developers can incorporate Realm as a local database in their apps using the Realm plugin for React Native.
+
+AsyncStorage:
+
+AsyncStorage is a simple, key-value pair storage system provided by React Native. It is built on the asynchronous storage system in the device’s native framework. AsyncStorage is lightweight and suitable for storing small amounts of data, such as settings or user preferences.
+
+PouchDB:
+
+PouchDB is an open-source, JavaScript-based local database that syncs with Apache CouchDB. It is designed to work well with modern web and mobile applications. React Native developers can use the PouchDB plugin to leverage its features and capabilities in their apps.
+
+WatermelonDB:
+
+WatermelonDB is a reactive database library for React Native that focuses on performance and scalability. It provides an easy-to-use API for managing data and offers offline support. WatermelonDB uses SQLite as its underlying storage engine and offers a schema-based approach for data modeling.
+
+LokiJS:
+
+LokiJS is an in-memory local database that stores data in JavaScript objects. It is lightweight and suitable for small to medium-sized applications. LokiJS provides a flexible querying system and supports indexes for faster data retrieval. React Native developers can use the LokiJS plugin to integrate this database into their apps.
+
+Firebase Realtime Database:
+
+Firebase Realtime Database is a cloud-hosted NoSQL database offering real-time synchronization and offline support. It is a serverless solution that stores data in JSON format. React Native has a Firebase plugin that allows developers to interact with the Firebase Realtime Database and leverage its real-time capabilities.
+
+Couchbase Lite:
+
+Couchbase Lite is a lightweight, embedded NoSQL database designed for mobile and IoT applications. It provides a flexible data model and supports synchronization with Couchbase Server. React Native developers can utilize the Couchbase Lite plugin to integrate this database into their apps and benefit from its features.
+
+NeDB:
+
+NeDB is an embedded JavaScript database inspired by MongoDB’s API. It is designed to be lightweight and easy to use. NeDB offers a query syntax similar to MongoDB and supports indexing for faster queries. React Native developers can use the NeDB plugin to include this database in their apps.
+
+AsyncStorageDB:
+
+AsyncStorageDB is a simple and lightweight key-value store for React Native apps. It is built on AsyncStorage and provides an easy-to-use data storage and retrieval API. While it may not offer advanced features, AsyncStorageDB is suitable for straightforwardly storing small amounts of data.

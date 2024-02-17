@@ -4,6 +4,8 @@ import { StyleSheet, Text, View } from "react-native";
 import Home from "./screens/Home";
 import Second from "./screens/Second";
 import MyModal from "./screens/MyModal";
+import LoginScreen from "./screens/SampleLoginScreen";
+import BezierLineChart from "./pages/Charts";
 
 const Stack = createNativeStackNavigator();
 
@@ -13,6 +15,8 @@ const StackNavigator = () => {
       <Stack.Group>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Second" component={Second} />
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Chart" component={BezierLineChart} />
       </Stack.Group>
       <Stack.Group screenOptions={{ presentation: "modal" }}>
         <Stack.Screen name="Modal" component={MyModal} />

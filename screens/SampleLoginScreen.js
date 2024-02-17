@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/native';
 import React, { useState } from 'react';
 import {
     SafeAreaView,
@@ -19,11 +20,14 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 const LoginScreen = () => {
+    const navigation = useNavigation()
     const onPressLogin = () => {
         // Do something about login operation
+        navigation.navigate("Chart")
     };
     const onPressForgotPassword = () => {
         // Do something about forgot password operation
+        navigation.goBack()
     };
     const onPressSignUp = () => {
         // Do something about signup operation
