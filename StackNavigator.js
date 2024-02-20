@@ -6,6 +6,8 @@ import Second from "./screens/Second";
 import MyModal from "./screens/MyModal";
 import LoginScreen from "./screens/SampleLoginScreen";
 import BezierLineChart from "./pages/Charts";
+import WeatherApp from "./pages/weather/WeatherApp";
+import { TrainStatusApp } from "./pages/networking/TrainStatusApp";
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +19,8 @@ const StackNavigator = () => {
         <Stack.Screen name="Second" component={Second} />
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Chart" component={BezierLineChart} />
+        <Stack.Screen name="WeatherApp" component={WeatherApp} />
+        <Stack.Screen name="TrainStatusApp" component={TrainStatusApp} />
       </Stack.Group>
       <Stack.Group screenOptions={{ presentation: "modal" }}>
         <Stack.Screen name="Modal" component={MyModal} />

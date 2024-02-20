@@ -8,7 +8,7 @@ import Weather from './components/Weather';
 import { PermissionsAndroid } from 'react-native';
 
 export default function WeatherApp() {
-  const [temperature, setTemperature] = useState(0)
+  const [temperature, setTemperature] = useState({})
   const [weather, setWeather] = useState('')
   const [icon, setIcon] = useState('')
   const [countryCode, setCountryCode] = useState('')

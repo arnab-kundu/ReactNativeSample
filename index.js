@@ -23,8 +23,8 @@ AppRegistry.registerComponent(appName, () => GetApiCall);
 AppRegistry.registerComponent(appName, () => PostApiCall);
 AppRegistry.registerComponent(appName, () => WeatherApp);
 AppRegistry.registerComponent(appName, () => DatabaseApp);
-AppRegistry.registerComponent(appName, () => StackNavigationApp);
 AppRegistry.registerComponent(appName, () => TrainStatusApp);
 AppRegistry.registerComponent(appName, () => ImageZoomApp);
+AppRegistry.registerComponent(appName, () => StackNavigationApp);
 
 //AppRegistry.registerComponent(appName, () => SampleLoginScreen);

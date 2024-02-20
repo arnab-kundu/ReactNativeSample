@@ -14,6 +14,8 @@ const Home = () => {
       />
       <Button onPress={() => navigation.navigate("Login")} title="Login" />
       <Button onPress={() => navigation.navigate("Chart")} title="Chart" />
+      <Button onPress={() => navigation.navigate("WeatherApp")} title="Weather App" />
+      <Button onPress={() => navigation.navigate("TrainStatusApp")} title="Train Status App" />
     </SafeAreaView>
   );
 };

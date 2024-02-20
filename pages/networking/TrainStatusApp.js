@@ -76,6 +76,7 @@ export const TrainStatusApp = () => {
         <View style={styles.container}>
             {isLoading ? (
                 <View style={styles.loadingContainer}>
+                    <ActivityIndicator />
                     <Text style={styles.loadingText}>Fetching Train Status</Text>
                 </View>
             ) : (
