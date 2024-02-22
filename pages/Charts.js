@@ -9,10 +9,8 @@ import {
 } from "react-native-chart-kit";
 
 import { data, contributionData, pieChartData, progressChartData } from './chartDataMocked'
-import { useNavigation } from "@react-navigation/native";
 
 function BezierLineChart() {
-    const navigation = useNavigation()
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView style={styles.scrollView}>

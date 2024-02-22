@@ -94,3 +94,5 @@ react hooks {useStates useEffects useProps}
 prod build release in playstore
 dropdown / spinner
 datepicker
+
+Removed:  "react-native-screens": "^3.27.0",

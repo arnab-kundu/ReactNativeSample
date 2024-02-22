@@ -25,6 +25,6 @@ AppRegistry.registerComponent(appName, () => WeatherApp);
 AppRegistry.registerComponent(appName, () => DatabaseApp);
 AppRegistry.registerComponent(appName, () => TrainStatusApp);
 AppRegistry.registerComponent(appName, () => ImageZoomApp);
-AppRegistry.registerComponent(appName, () => StackNavigationApp);
+//AppRegistry.registerComponent(appName, () => StackNavigationApp);
 
 //AppRegistry.registerComponent(appName, () => SampleLoginScreen);
