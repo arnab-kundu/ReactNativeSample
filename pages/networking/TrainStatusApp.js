@@ -1,8 +1,12 @@
-import { View, Text, StyleSheet, StatusBar, SafeAreaView, FlatList, ActivityIndicator } from "react-native";
+import { View, Text, StyleSheet, StatusBar, SafeAreaView, FlatList, ActivityIndicator, LogBox } from "react-native";
 import { useEffect } from "react";
 import { useState } from "react";
 
 export const TrainStatusApp = () => {
+
+
+    LogBox.ignoreLogs(['new NativeEventEmitter']); // Ignore log notification by message
+    LogBox.ignoreAllLogs(); //Ignore all log notifications
 
     const [isLoading, setLoading] = useState(true)
     const [data, setData] = useState({})
@@ -93,7 +97,7 @@ export const TrainStatusApp = () => {
                         <Text style={styles.title}>Sschdule time</Text>
                         <Text style={styles.title}>Actual time</Text>
                     </View>
-                    
+
                     <FlatList
                         data={data}
                         renderItem={({ item }) => <Item station={item.stn_name} schdule_arrival_time={item.sch_arr} actual_arrival_time={item.act_arr} />}

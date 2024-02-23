@@ -59,21 +59,21 @@ export default function WeatherApp() {
   //   fetchWeather(22.6440364, 88.56, 'imperial');
   // }, []);
 
-  // useEffect(() => {
-  //   fetchWeather(22.6440364, 88.56);
-  // }, []);
+  useEffect(() => {
+    fetchWeather(22.6440364, 88.56);
+  }, []);
 
   useEffect(() => {
-    fetchLatlon()
+    //fetchLatlon()
   }, [])
 
-  PermissionsAndroid.request(
-    PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
-    {
-      title: "Location Accessing Permission",
-      message: "App needs access to your location",
-    }
-  );
+  // PermissionsAndroid.request(
+  //   PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+  //   {
+  //     title: "Location Accessing Permission",
+  //     message: "App needs access to your location",
+  //   }
+  // );
 
   return (
     <View style={styles.container}>
