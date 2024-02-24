@@ -31,7 +31,17 @@
 		<false/>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
+
+		<key>NSExceptionDomains</key>
+    	<dict>
+        <key>164.52.197.129</key>
+        	<dict>
+            	<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
+            	<true/>
+        	</dict>
+    	</dict>
 	</dict>
+
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
 	<key>UILaunchStoryboardName</key>
