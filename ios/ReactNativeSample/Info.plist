@@ -39,6 +39,11 @@
             	<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
             	<true/>
         	</dict>
+        <key>api.openweathermap.org</key>
+        	<dict>
+            	<key>NSThirdPartyExceptionAllowsInsecureHTTPLoads</key>
+            	<true/>
+        	</dict>
     	</dict>
 	</dict>
 

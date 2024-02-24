@@ -38,7 +38,7 @@ const Weather = ({ weather, temperature, icon, countryCode }) => {
 
 Weather.propTypes = {
   weather: PropTypes.string,
-  temperature: PropTypes.number.isRequired
+  temperature: PropTypes.object.isRequired
 };
 
 const styles = StyleSheet.create({
